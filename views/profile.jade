@@ -1,0 +1,45 @@
+doctype html
+html
+  head
+    title Welcome to Post-It
+    script(src='/javascripts/global.js')
+    link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css')
+    link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css')
+    style.
+      body        { padding-top:35px; word-wrap:break-word; }
+  body
+    .container
+      .page-header.text-center
+        h1
+          span.fa.fa-anchor
+          |  Main Page
+        a.btn.btn-default.btn-sm(href='/logout') Logout
+      .row
+        // FACEBOOK INFORMATION
+        .col-sm-4
+          .well
+            h3.text-primary
+              span.fa.fa-facebook
+              |  Facebook Profile
+            p
+              strong id : 
+              | #{user.facebook.id}
+              br
+              strong email : 
+              | #{user.facebook.email}
+              br
+              strong name : 
+              | #{user.facebook.name}
+              br
+              strong photo :
+              img(src= ppath, alt='dp')
+        .col-sm-8
+          .well
+            h3.text-primary
+              span.fa.fa-comments
+              |  Posts
+              br
+              input#txt_name(type='text', value='Share your thoughts')
+            
+
