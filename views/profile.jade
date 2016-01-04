@@ -1,8 +1,13 @@
 html
   head
     title Welcome to Post-It
-    
-    script(src='/javascripts/global.js')	
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+    script.
+      $(document).ready(function(){
+      $("#txt_name").click(function(){
+      $("#txt_name").val("");
+      });
+      });	
     link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
     link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css')
     link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css')
