@@ -2,3 +2,7 @@ body {
     background-image: url("/images/78c16102.png");
     
 }
+
+input#txt_name {
+	font-size:x-small;
+}
