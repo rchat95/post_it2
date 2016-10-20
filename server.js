@@ -1,4 +1,4 @@
-// server.js
+// Server.js
 
 // set up ======================================================================
 // get all the tools we need
